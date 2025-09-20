@@ -30,8 +30,6 @@ services:
     restart: unless-stopped
     volumes:
       - grafana_data:/var/lib/grafana
-    expose:
-      - 3000
     networks:
       - nginx1
       - nginx2
